@@ -11,10 +11,11 @@ $(document).ready(function(){
         for(var i=0; i<arr.length;i++){
             $('.slider-of-work').append("<div class='carousel-cell'>" +
                 "<img src="+'assets/content/'+pr+'/'+arr[i]+">" +
-                "<div class='text'>" +
+                /*закомитил потому что не разобрался как поставить текст под картинку*/
+                /*"<div class='text'>" +
                 "<span class='name'>"+name+"</span>"+
                 "<span class='tags'>"+tags+"</span>"+
-                "</div>" +
+                "</div>" +*/
                 "</div>");
         }
         $(".modal-window.pages").fadeToggle(300);

@@ -259,6 +259,7 @@ h6{
     overflow-x: hidden;
 }
 .modal-window .modal-content{
+    float: left;
     width: 100%;
     height:100%;
     display: -webkit-box;
@@ -275,41 +276,43 @@ h6{
 }
 .modal-window .modal-content-close{
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height:30px;
+    float: right;
+    top: 10px;
+    right: 10px;
+    width: 33px;
+    font-size: 30px;
+    z-index: 5001;
 }
 .modal-window .modal-content-close a{
+    border: 1px;
+    border-radius: 50px;
+    border-style: solid; 
     width: 100%;
-    height:100%;
-    background-color:white;
-    color: black;
-    box-shadow: 0 0 0 5px rgba(241, 187, 31, 0.5);
-    font-size: 30px;
+    height: 100%;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    -webkit-box-align:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-pack:center;
-    -ms-flex-pack:center;
-    justify-content:center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    
+
 }
 .modal-window .modal-content-close a:hover{
     -webkit-transition:all .3s;
     -o-transition:all .3s;
     transition:all .3s;
-    background-color: rgb(241, 187, 31);
     color:white;
 }
 .modal-window .slider-of-work{
     overflow: visible;
     width: 100%;
-    max-width:600px;
+    max-width:900px;
 }
 .modal-window .slider-of-work:focus{
     outline:none;
@@ -338,7 +341,7 @@ h6{
     color: white;
 }
 .flickity-page-dots {
-    bottom: -15px;
+    bottom: -25px;
 }
 .flickity-page-dots .dot {
     width: 8px;
@@ -362,11 +365,12 @@ h6{
     box-sizing: border-box;
 }
 .slider-of-work .text .name{
-    color: #f1bb1f;
+    color: #fff;
     width: 100%;
     float: left;
     font-size: 14px;
     text-transform: uppercase;
+    padding-bottom: 5px;
 }
 .slider-of-work .text .tags{
     color:#a5a7aa;
